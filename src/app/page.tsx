@@ -29,6 +29,13 @@ const EmailIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+// Tambahkan komponen TelegramIcon
+const TelegramIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.06-.043-.096-.057-.037-.146-.014-.21.011-.115.042-1.86 1.17-5.26 3.24-.64.39-1.21.59-1.78.58-.59-.01-1.037-.17-1.434-.31-.454-.16-.78-.244-.78-.54l.002-.28c.002-.24.177-.37.365-.455 1.17-.508 7.385-3.754 7.545-3.83.07-.034.144-.05.213-.05z"></path>
+  </svg>
+);
+
 const XIcon = () => (
   <svg role="img" viewBox="0 0 24 24" className="size-4">
     <title>
@@ -43,7 +50,7 @@ const XIcon = () => (
 export default function Home() {
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/R1sco", icon: GitHubIcon },
-    { name: "Discord", url: "#", icon: DiscordIcon, value: "Arap5493" },
+    { name: "Telegram", url: "https://t.me/hecoook", icon: TelegramIcon },
     { name: "Email", url: "mailto:riscorizky@gmail.com", icon: EmailIcon },
     { name: "Twitter/X", url: "https://x.com/Hecok_", icon: XIcon },
   ];
@@ -80,10 +87,10 @@ export default function Home() {
           </p>
           
           <p className="text-lg text-gray-300 mb-3">
-            Hello there, I am a man from Indonesia. Currently involved on web game development.
+            Hello there, I am a man from Indonesia. Currently still studying at the University in Indonesia.
           </p>
           <p className="text-lg text-gray-300 mb-3">
-            Currently, studying at the University in Indonesia. Interested about artificial intelligence technologies.
+            I'm passionate about web game development, web development, data science, cryptocurrency and machine learning.
           </p>
           <p className="text-lg text-gray-300">
             Available to collaborate on any project.  
@@ -107,14 +114,14 @@ export default function Home() {
               target={link.url.startsWith("http") || link.url.startsWith("mailto:") ? "_blank" : undefined}
               rel={link.url.startsWith("http") ? "noopener noreferrer" : undefined}
               className="flex items-center px-3 py-2 rounded hover:bg-gray-800 text-muted-foreground hover:text-white transition-all duration-200 group mx-1"
-              title={link.name + (link.value ? `: ${link.value}` : '')}
+              title={link.name}
             >
               {/* Gunakan React.createElement untuk merender komponen ikon secara dinamis dengan efek hover warna */}
-              <span className="group-hover:text-navy-500 transition-colors duration-200">
+              <span className="group-hover:text-green-500 transition-colors duration-200">
                 {React.createElement(link.icon, { className: "w-5 h-5 mr-2" })}
               </span>
               <span className="group-hover:underline underline-offset-2">
-                {link.name === "Discord" ? link.value : link.name}
+                {link.name}
               </span>
             </Link>
           ))}
