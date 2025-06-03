@@ -52,7 +52,7 @@ export default function Home() {
       description: "A full-featured online store built with Laravel and React, featuring product management, cart functionality, and payment integration.",
       technologies: ["Laravel", "React", "MySQL", "Stripe API"],
       imageUrl: "/images/projects/ecommerce.png",
-      demoUrl: "#",
+      demoUrl: "https://online-shop-dcf508.netlify.app",
       codeUrl: "#"
     },
     {
