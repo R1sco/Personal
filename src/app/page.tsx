@@ -83,9 +83,9 @@ export default function Home() {
       title: "Cryptocurrency Tracker",
       description: "Real-time cryptocurrency price tracker with interactive charts, portfolio management, and price alerts for crypto enthusiasts.",
       technologies: ["React", "Node.js", "CoinGecko API", "Chart.js"],
-      imageUrl: "/images/projects/crypto.jpg",
-      demoUrl: "#",
-      codeUrl: "#"
+      imageUrl: "/images/projects/crypto.png",
+      demoUrl: "https://crypto-currency-tracker-app-d79c6.netlify.app",
+      codeUrl: "https://github.com/R1sco/Crypto-Tracker",
     },
   ];
   
