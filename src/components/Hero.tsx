@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import TextTypewriter from './TextTypewriter';
+
 import Image from 'next/image';
 
 
@@ -29,13 +30,14 @@ const Hero: React.FC<HeroProps> = ({ name, bioParagraphs, profileImageUrl, techS
     const profileEl = containerRef.current.querySelector('.anime-profile');
     const items = containerRef.current.querySelectorAll('.anime-fade-up');
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     import('animejs').then((anime: any) => {
-      
       anime.timeline({ easing: 'easeOutQuad' })
         .add({ targets: profileEl, scale: [0.6,1], opacity: [0,1], duration:800 })
         .add({ targets: items, translateY: [20,0], opacity: [0,1], duration:600, delay: anime.stagger(150) });
-
     });
+
+
   }, []);
 
   return (
