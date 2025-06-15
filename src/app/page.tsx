@@ -20,12 +20,12 @@ interface TechStackData {
 
 export default function Home() {
   const name = "R1sco";
-  const profileImageUrl = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWthdXB3cGZjenA0dDQ5dWJwMXpxNW50ZXkycmRwdmI4dm1nZWNxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9i9fRaNhHfu92/giphy.gif"; // Pastikan path ini benar
+  const profileImageUrl = "https://i.imgur.com/y9NqV6Q.jpeg"; // Pastikan path ini benar
 
   // Bio paragraphs
   const bioParagraphs: string[] = [
     "Hello there, I'm Risco currently studying at University of Muhammadiyah Surakarta, Indonesia.",
-    "I'm passionate about game, web development, data science, cryptocurrency and machine learning."
+    "I'm passionate about game, web development, data science, Crypto Currency and Cyber Security."
   ];
 
   // Tech Stack data
@@ -48,34 +48,18 @@ export default function Home() {
   // Portfolio projects
   const portfolioProjects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured online store built with Laravel and React, featuring product management, cart functionality, and payment integration.",
-      technologies: ["Laravel", "React", "MySQL", "Stripe API"],
-      imageUrl: "/images/projects/ecommerce.png",
-      demoUrl: "https://online-shop-dcf508.netlify.app",
-      codeUrl: "#"
+      title: "Tournament Promotion",
+      description: "official information platform for the prestigious 2025 futsal tournament. This website is designed to provide an ads and interactive experience for visitors.",
+      technologies: ["HTML5", "CSS3", "Anime.js", "Javascript"],
+      imageUrl: "https://i.imgur.com/C7a1KtJ.png",
+      demoUrl: "https://futsal-championship-2025-unique-f5pl4.netlify.app/",
+      codeUrl: "https://github.com/R1sco/Tournament-Website"
     },
     {
       title: "Data Visualization Dashboard",
       description: "Interactive dashboard for visualizing complex datasets, built with Python and JavaScript libraries for data processing and visualization.",
       technologies: ["Python", "Flask", "D3.js", "Pandas"],
-      imageUrl: "/images/projects/data-viz.jpg",
-      demoUrl: "#",
-      codeUrl: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, user authentication, and team collaboration features.",
-      technologies: ["PHP", "Vue.js", "Firebase", "Tailwind CSS"],
-      imageUrl: "/images/projects/task-app.jpg",
-      demoUrl: "#",
-      codeUrl: "#"
-    },
-    {
-      title: "Personal Blog Platform",
-      description: "A modern blog platform with a clean design, markdown support, comment system, and SEO optimization for content creators.",
-      technologies: ["Laravel", "Alpine.js", "MySQL", "Bootstrap"],
-      imageUrl: "/images/projects/blog.jpg",
+      imageUrl: "/images/projects/DataVisualization/datavisualization.png",
       demoUrl: "#",
       codeUrl: "#"
     },
@@ -83,7 +67,7 @@ export default function Home() {
       title: "Cryptocurrency Tracker",
       description: "Real-time cryptocurrency price tracker with interactive charts, portfolio management, and price alerts for crypto enthusiasts.",
       technologies: ["React", "Node.js", "CoinGecko API", "Chart.js"],
-      imageUrl: "/images/projects/crypto.png",
+      imageUrl: "https://i.imgur.com/uc9cYm5.png",
       demoUrl: "https://crypto-currency-tracker-app-d79c6.netlify.app",
       codeUrl: "https://github.com/R1sco/Crypto-Tracker",
     },
@@ -92,9 +76,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-gray-200">
       <Header />
-      <main className="container mx-auto px-4 py-8 max-w-6xl">
+      <main className="container mx-auto px-17 py-3 max-w-10xl">
         {/* Combined Hero and Portfolio Section with Gradient */}
-        <div className="w-full max-w-5xl mx-auto mb-16 py-12 sm:py-16 bg-gradient-to-b from-black via-gray-900 to-black rounded-lg px-4 sm:px-6">
+        <div className="w-full max-w-5xl mx-auto mb-12 py-8 sm:py-6 bg-gradient-to-b from-black via-gray-900 to-black rounded-lg px-4 sm:px-6">
           {/* Hero Section */}
           <Hero
             name={name}
